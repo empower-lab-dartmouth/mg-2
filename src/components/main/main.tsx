@@ -1,7 +1,7 @@
 import "./main.css";
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
-
+import React from "react";
 
 const Main = () =>{
     return (
