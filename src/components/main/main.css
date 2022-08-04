@@ -7,6 +7,12 @@
 
 .start-button{
     position:absolute;
-    top: 60%;
-    left:47%;
+    top: 25%;
+    left: 38%;
+}
+
+.danny{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
 }

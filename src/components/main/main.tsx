@@ -1,18 +1,33 @@
 import "./main.css";
-import Button from '@mui/material/Button';
+import {Button} from '../../editor/button';
 import { Link } from "react-router-dom";
 import React from "react";
+import Stack from "@mui/material/Stack";
 
 const Main = () =>{
     return (
         <div className="main">
-            <p>Welcome to 20 Questions!</p>
             <div className = "start-button">
+            <Stack spacing = {15} direction = "column">
             <Button variant="contained">
-                <Link to = "/selection"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
-                Start
+                <Link to = "/game"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                Fruit
                 </Link>
             </Button>
+            <Button variant="contained">
+                <Link to = "/game"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                Disney
+                </Link>
+            </Button>
+            <Button variant="contained">
+                <Link to = "/game"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                Across the World
+                </Link>
+            </Button>
+            </Stack>
+            </div>
+            <div className = "danny">
+                <img src = {"../UI/drachen.png"} width = "210px" height = "200px"/>
             </div>
         </div>
     )
