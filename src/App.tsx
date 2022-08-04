@@ -6,12 +6,14 @@ import Error from "./components/error";
 import {RecoilRoot} from "recoil";
 import Game from "./components/game/game"
 import Helmet from "react-helmet";
+import {topbar} from "./components/topbar/topbar";
 
 function App() {
   return (
     <div className="App">
      <RecoilRoot>
       <Helmet bodyAttributes={{style: 'background-color : #DDEBE0'}}/>
+      {topbar()}
         <Routes>
            <Route path = "/"  element = {<Main />}/>
            <Route path = "/game"  element = {<Game />}/>
