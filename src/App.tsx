@@ -4,7 +4,8 @@ import React from "react";
 import Main from "./components/main/main";
 import Error from "./components/error";
 import {RecoilRoot} from "recoil";
-import Game from "./components/game/game"
+import Game from "./components/game/game";
+import Imageselection from "./components/imageselection/imageselection";
 import Helmet from "react-helmet";
 import {topbar} from "./components/topbar/topbar";
 
@@ -16,6 +17,7 @@ function App() {
       {topbar()}
         <Routes>
            <Route path = "/"  element = {<Main />}/>
+           <Route path = "/imageselection" element = {<Imageselection />}/>
            <Route path = "/game"  element = {<Game />}/>
            <Route element = {<Error />} />
         </Routes>

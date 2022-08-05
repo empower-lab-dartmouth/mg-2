@@ -10,17 +10,17 @@ const Main = () =>{
             <div className = "start-button">
             <Stack spacing = {15} direction = "column">
             <Button variant="contained">
-                <Link to = "/game"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                <Link to = "/imageselection"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 Fruit
                 </Link>
             </Button>
             <Button variant="contained">
-                <Link to = "/game"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                <Link to = "/imageselection"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 Disney
                 </Link>
             </Button>
             <Button variant="contained">
-                <Link to = "/game"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                <Link to = "/imageselection"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
                 Across the World
                 </Link>
             </Button>
