@@ -1,6 +1,7 @@
-import {currentimage, status} from "./atoms";
+import {currentimage, status, currentnode} from "./atoms";
 
 export{
     currentimage,
-    status
+    status,
+    currentnode
 }

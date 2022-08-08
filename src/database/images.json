@@ -26,5 +26,10 @@
      {
           "label" : ["strawberry"],
         "path" : "strawberry.jpeg"
+     },
+     {
+        "label": ["dragonfruit"],
+        "path": "dragonfruit.jpeg"
      }
+
 ]

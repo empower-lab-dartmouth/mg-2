@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import "./topbar.css";
-import { currentimage, status } from '../../store';
+import { currentimage, status, currentnode } from '../../store';
 import {useRecoilState, useRecoilValue} from "recoil";
 import {READY,GAMING,END} from "../../models/status";
 
@@ -12,8 +12,10 @@ export const Topbar = () => {
 
     const [selectedimage, setselectedimage] = useRecoilState(currentimage);
     const [gamestatus, setgamestatus] = useRecoilState(status);
+    const [innode, setinnode] = useRecoilState(currentnode);
 
     const reset = () => {
+          setinnode({ question: "NA",yes: null,no: null});
           setgamestatus(GAMING);
           setselectedimage({
             label: "apple",

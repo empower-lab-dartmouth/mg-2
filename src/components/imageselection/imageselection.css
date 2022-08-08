@@ -23,5 +23,10 @@
 
 .space{
   margin-left: 50px;
-  margin-right: 10px;
+  margin-right: 68px;
+}
+
+.image{
+    border: solid;
+    border-color: black;
 }

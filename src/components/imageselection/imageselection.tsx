@@ -19,12 +19,12 @@ const Imageselection = () => {
      return (
        <div className = "image-selection">
         <div className = "box">
-        <img className = "space" src = {"../UI/drachenhappy.png"} height = "200px" width = "200px"/>
+        <img className = "space" src = {"../UI/drachenhappy.png"} height = "200px" width = "150px"/>
            {Images.map((value, index) => {
                return(
             <Button id = {index.toString()} onClick = {() => chooseimage(value)}>
                  <Link to = "/game"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
-            <img src = {"../images/"+value.path} height = "250px" width = "250px"/>
+            <img className = "image" src = {"../images/"+value.path} height = "250px" width = "250px" />
                  </Link>
             </Button>) }
                )

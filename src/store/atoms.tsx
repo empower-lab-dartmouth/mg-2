@@ -1,5 +1,6 @@
 import {atom, selector} from "recoil";
 import {image} from "../models/image";
+import {question} from "../models/question";
 
 export const currentimage = atom<image>({
     key: "current-image",
@@ -12,4 +13,13 @@ export const currentimage = atom<image>({
 export const status = atom({
     key: "status",
     default: 1,
+})
+
+export const currentnode = atom<question>({
+    key: "current-node",
+    default: {
+        question: "NA",
+        yes: null,
+        no: null,
+    }
 })

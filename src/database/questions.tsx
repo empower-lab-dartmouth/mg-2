@@ -19,6 +19,13 @@ const aBanana: question = {
     no: null
 }
 
+
+const aApple: question = {
+    question: "Apple!",
+    yes: null,
+    no: null
+}
+
 const qBerry: question = {
     question: "Is it a berry?",
     yes: aStrawberry,
@@ -72,4 +79,4 @@ const qGreen: question = {
     no: aPyramids
 }
 
-export {aStrawberry, aDragonfruit, aBanana, qBerry, qRed, aElsa, aOlaf, qHuman, aStatue, aPyramids, qGreen};
+export {aApple, aStrawberry, aDragonfruit, aBanana, qBerry, qRed, aElsa, aOlaf, qHuman, aStatue, aPyramids, qGreen};
