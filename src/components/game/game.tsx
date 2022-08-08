@@ -45,7 +45,7 @@ const Game = () => {
                 <div className = "result">
                     <img className = "dannyend" src = "../UI/drachenhappy.png" height = "250px" width = "200px"/>
                     <div className = "bubbleend">
-                        <img src = "../UI/resultbubble.png" height = "400px" width = "400px" />
+                        <img src = "../UI/resbubble.png" height = "400px" width = "400px" />
                         <div className = "answerbox">
                               <p className = "answer">Your fruit is: Apple!  </p>
                         </div>      

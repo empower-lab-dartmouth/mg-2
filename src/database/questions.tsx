@@ -1,36 +1,31 @@
-type Question = {
-    question: string,
-    yes: Question | null,
-    no: Question | null,
-}
-
+import {question} from "../models/question";
 // Fruits
 
-const aStrawberry: Question = {
+const aStrawberry: question = {
     question: "Strawberry!",
     yes: null,
     no: null
 }
 
-const aDragonfruit: Question = {
+const aDragonfruit: question = {
     question: "Dragonfruit!",
     yes: null,
     no: null
 }
 
-const aBanana: Question = {
+const aBanana: question = {
     question: "Banana!",
     yes: null,
     no: null
 }
 
-const qBerry: Question = {
+const qBerry: question = {
     question: "Is it a berry?",
     yes: aStrawberry,
     no: aDragonfruit
 }
 
-const qRed: Question = {
+const qRed: question = {
     question: "Is it red?",
     yes: qBerry,
     no: aBanana
@@ -38,19 +33,19 @@ const qRed: Question = {
 
 // Disney
 
-const aElsa: Question = {
+const aElsa: question = {
     question: "Elsa!",
     yes: null,
     no: null
 }
 
-const aOlaf: Question = {
+const aOlaf: question = {
     question: "Olaf!",
     yes: null,
     no: null
 }
 
-const qHuman: Question = {
+const qHuman: question = {
     question: "Is your character human?",
     yes: aElsa,
     no: aOlaf
@@ -58,20 +53,23 @@ const qHuman: Question = {
 
 // Landmark
 
-const aStatue: Question = {
+const aStatue: question = {
     question: "Statue of Liberty!",
     yes: null,
     no: null
 }
 
-const aPyramids: Question = {
+const aPyramids: question = {
     question: "Pyramids of Egypt!",
     yes: null,
     no: null
 }
 
-const qGreen: Question = {
+
+const qGreen: question = {
     question: "Is it green?",
     yes: aStatue,
     no: aPyramids
 }
+
+export {aStrawberry, aDragonfruit, aBanana, qBerry, qRed, aElsa, aOlaf, qHuman, aStatue, aPyramids, qGreen};

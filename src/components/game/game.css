@@ -53,7 +53,7 @@
     width: 90%;
     left: 5%;
     position: absolute;
-    /* background-image: url("../UI/congra.png"); */
+    background-image: url("/UI/congra.png"); 
 }
 .bubbleend{
     position: absolute;
