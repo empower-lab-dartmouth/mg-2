@@ -2,17 +2,30 @@ import "./game.css";
 import Stack from '@mui/material/Stack';
 import { Link } from "react-router-dom";
 import {useRecoilState, useRecoilValue} from "recoil";
-import React from "react";
 import {ButtonSmall} from '../../editor/button-small';
 import {READY,GAMING,END} from "../../models/status";
 import {status, currentimage, currentnode } from "../../store";
 import {aApple, aStrawberry, aDragonfruit, aBanana, qBerry, qRed, aElsa, aOlaf, qHuman, aStatue, aPyramids, qGreen} from "../../database/questions";
- 
+import React, { useEffect, useRef, useLayoutEffect } from "react"; 
+
 const Game = () => {
 
     const [gamestatus, setgamestatus] = useRecoilState(status);
     const [innode, setinnode] = useRecoilState(currentnode);
     const selectedimage = useRecoilValue(currentimage);
+    const message = new SpeechSynthesisUtterance();
+    message.text = innode.question;
+
+    const isFirst = useRef(true);
+
+    useEffect(() => {
+        if(isFirst.current == true){
+            isFirst.current = false;
+        }
+        else{
+         window.speechSynthesis.speak(message);
+        }
+    },[innode])
     
     const next = (input: string) => {
        var nextpointer = innode; 
