@@ -21,7 +21,7 @@ const Main = () =>{
                 Fruit  
             </Button>
             </Link>
-            <Link to = "/imageselection"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
+            <Link to = "/imageselection1"  style={{ color: 'inherit', textDecoration: 'inherit'}}>
             <Button variant="contained">
                 Disney
             </Button>

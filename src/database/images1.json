@@ -1,0 +1,22 @@
+[
+    {
+        "label": ["dog"],
+        "path": "dog.jpeg"
+    },
+    {
+        "label": ["cat"],
+        "path": "cat.jpeg"
+    },
+    {
+        "label": ["horse"],
+        "path": "horse.jpeg"
+    },
+    {
+        "label": ["shark"],
+        "path": "shark.jpeg"
+    },
+    {
+        "label": ["elephant"],
+        "path": "elephant.jpeg"
+    }
+]

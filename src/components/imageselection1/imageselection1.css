@@ -1,0 +1,32 @@
+.image-selection1{
+    height: 92%;
+    width: 100%;
+    top: 8%;
+    position: fixed;
+    align-items:center;
+    justify-content: center;
+    
+}
+
+.box1{
+   top: 15%;
+   left: 5%;
+ 
+   width: 90%;
+   height: 80%;
+   overflow-y: scroll;
+
+   position: fixed;
+   align-items:center;
+   justify-content: center;
+}
+
+.space1{
+  margin-left: 50px;
+  margin-right: 68px;
+}
+
+.image1{
+    border: solid;
+    border-color: black;
+}
